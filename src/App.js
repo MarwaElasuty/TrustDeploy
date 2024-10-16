@@ -34,7 +34,6 @@ import benefit1 from './images/benefit1.svg';
 import benefit2 from './images/benefit2.svg';
 import benefit3 from './images/benefit3.svg';
 import buttonBlur from './images/buttonBlur.svg';
-import downloadBtnBorder from './images/downloadBtnBorder.svg';
 import googlePlay from './images/googlePlay.svg';
 import apple from './images/apple.svg';
 import zigBg from './images/zig-bg.svg'
@@ -48,6 +47,8 @@ import footerFacebook from './images/footerFacebook.svg'
 import footerGithub from './images/footerGithub.svg'
 import benefitShadow from './images/benefit-shadow.svg'
 import downloadAppShadow from './images/download-app-shadow.svg'
+import oneVector from './images/one-vector.svg'
+import twoVector from './images/two-vector.svg'
 
 
 
@@ -326,7 +327,7 @@ function App() {
               {/* First Card */}
               <div className="flex flex-col items-center w-full md:w-1/2">
                 <div className="flex items-center space-x-4 mb-6 relative">
-                  <span className="text-10xl font-extrabold text-white relative">1</span>
+                  <img src={oneVector} className='relative left-14'></img>
                   <div className='bg-gray-800 rounded-3xl py-8 px-6 w-full min-h-44 relative z-index-3'>
                     <h3 className="text-2xl font-semibold mb-2">Secure Setup</h3>
                     <p className="text-gray-400">Create your multisig wallet by selecting the number of signatures required to approve a transaction. Invite trusted parties to join the wallet, each with their own private key securely stored on their device.</p>
@@ -337,8 +338,8 @@ function App() {
               {/* Second Card */}
               <div className="flex flex-col items-center w-full md:w-1/2">
                 <div className="flex items-center space-x-4 mb-6 relative">
-                  <span className="text-10xl font-extrabold text-green-500 relative">2</span>
-                  <div className='bg-gray-800 rounded-3xl py-8 px-6 w-full min-h-44 relative z-index-3'>
+                <img src={twoVector} className='relative left-11'></img>
+                <div className='bg-gray-800 rounded-3xl py-8 px-6 w-full min-h-44 relative z-index-3'>
                     <h3 className="text-2xl font-semibold mb-2">Approve Transactions</h3>
                     <p className="text-gray-400">When a transaction is initiated, it requires approval from the designated number of signers. Once the required signatures are collected, the transaction is securely executed on the blockchain, ensuring maximum security and control.</p>
                   </div>
