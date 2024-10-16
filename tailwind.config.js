@@ -8,7 +8,7 @@ module.exports = {
       backgroundImage: {
         'next-level': "url('./images/next-level-bg.png')",
         'middle-feature': "url('./images/middle-feature.png')",
-        'crypto': "url('./images/crypto-bg.png')",
+        'crypto-bg': "url('./images/crypto-bg.svg')",
         'why-choose-line': "url('./images/why-choose-line.svg')",
         'main-bg': "url('./images/main-bg.svg')",
         "benefit-shadow": "url('./images/benefit-shadow.svg')",

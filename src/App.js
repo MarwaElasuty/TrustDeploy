@@ -49,6 +49,9 @@ import benefitShadow from './images/benefit-shadow.svg'
 import downloadAppShadow from './images/download-app-shadow.svg'
 import oneVector from './images/one-vector.svg'
 import twoVector from './images/two-vector.svg'
+import exit from './images/exit.svg'
+import plus from './images/plus.svg'
+import nextLevelShadow from './images/next-level-shadow.svg'
 
 
 
@@ -60,24 +63,30 @@ import twoVector from './images/two-vector.svg'
 function App() {
   return (
 
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-next-level bg-contain bg-no-repeat" >
       <Header />
       {/* Hero Section */}
       <section className="w-full bg-main-bg min-h-screen bg-contain bg-no-repeat">
-        <section className="w-full bg-next-level bg-contain bg-no-repeat w-2/4 -mt-15 font-bold text-white py-14 text-center flex flex-col items-center justify-center">
-          <div className='main-heading-container relative mb-7'>
-            <h1 className="text-8xl font-bold"><span>next</span><span className='text-lime-400'>level</span></h1>
-            <p className="text-neutral-200 text-lg text-xl font-light">advanced self custody technology</p>
-          </div>
-          <img src={nextLevelImage} style={{ width: '42%' }}></img>
-        </section>
+      <section className="w-full w-2/4 -mt-15 font-bold text-white py-14 text-center flex flex-col items-center justify-center">
+  <div className='main-heading-container relative mb-7'>
+    <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold">
+      <span>next</span>
+      <span className='text-lime-400'>level</span>
+    </h1>
+    <p className="text-neutral-200 text-sm sm:text-lg md:text-xl font-light">advanced self custody technology</p>
+    <img src={nextLevelShadow} className='absolute top-4'></img>
+  </div>
+  <img src={nextLevelImage} style={{ width: '42%' }} alt="Next Level Technology" />
+</section>
+
 
 
 
 
 
         {/* Features Section */}
-        <section className="w-full px-4 text-gray-800 mb-16">
+
+        <section className="w-full px-4 text-gray-800 mb-16 bg-full-screen-shadow bg-contain bg-no-repeat"  style={{ backgroundPosition: '40% 50%', backgroundSize: '40%' }}>
           <h1 className='text-center text-4xl font-extrabold white-text-shadow mt-4 mb-16'>Key Features</h1>
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
 
@@ -116,6 +125,7 @@ function App() {
 
       </section>
 
+      <section className="w-full bg-full-screen-shadow bg-contain bg-no-repeat" style={{ backgroundPosition: '140% 65%', backgroundSize: '60%' }}>
       <section className="w-full text-white mt-14">
         <div className="mx-auto text-center">
           <h1 className='text-3xl font-semibold py-3 relative z-10' style={{
@@ -131,7 +141,7 @@ function App() {
         </div>
       </section>
 
-      <section className="w-full py-16 mb-14 mt-16 px-4 bg-full-screen-shadow bg-contain bg-no-repeat" style={{ backgroundPosition: '105% 65%', backgroundSize: '40%' }}>
+      <section className="w-full py-16 mb-14 mt-16 px-4">
         <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between text-white">
           <div className="mb-8 md:mb-0 md:w-1/3"> {/* Adjusted width for the image div */}
             <img src={whatis} alt="What is SAFESEND?" className="w-3/4 h-auto mx-auto" /> {/* Made the image smaller */}
@@ -151,7 +161,7 @@ function App() {
           </div>
         </div>
       </section>
-
+</section>
 
 
       <section className="w-full py-16 px-4 text-gray-800 mt-12 relative">
@@ -280,7 +290,7 @@ function App() {
       </section>
 
 
-      <section className="w-full py-16 px-4  bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '150% 80%', backgroundSize: '60%' }}>
+      <section className="w-full py-16 px-4  bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '150% 50%', backgroundSize: '60%' }}>
         <h1 className='text-5xl white-text-shadow mb-10 text-center font-extrabold'>Benefits</h1>
         <div className="max-w-6xl mx-auto bg-gradient-to-t from-neutral-950 to-zinc-900 border border-white border-b-0 rounded-3xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 py-12 text-white justify-items-center">
@@ -314,169 +324,178 @@ function App() {
 
           </div>
         </div>
+        </section>
 
+        <section className="w-full mt-16 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '-65% -40%', backgroundSize: '75%' }}>
+      <section className="w-full mt-16 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '-65% -60%', backgroundSize: '75%' }}>
+  <div className="max-w-6xl mx-auto text-white">
+    <h2 className="text-center text-4xl font-extrabold mb-8 white-text-shadow">How it Works</h2>
+    <div className="flex flex-col md:flex-row justify-center md:space-x-8 space-y-6 md:space-y-0">
 
-
-
-
-        <section className="w-full mt-16 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '-65% -60%', backgroundSize: '75%' }}>
-          <div className="max-w-6xl mx-auto text-white">
-            <h2 className="text-center text-4xl font-extrabold mb-8 white-text-shadow">How it Works</h2>
-            <div className="flex flex-col md:flex-row justify-evenly md:space-x-8 space-y-6 md:space-y-0">
-
-              {/* First Card */}
-              <div className="flex flex-col items-center w-full md:w-1/2">
-                <div className="flex items-center space-x-4 mb-6 relative">
-                  <img src={oneVector} className='relative left-14'></img>
-                  <div className='bg-gray-800 rounded-3xl py-8 px-6 w-full min-h-44 relative z-index-3'>
-                    <h3 className="text-2xl font-semibold mb-2">Secure Setup</h3>
-                    <p className="text-gray-400">Create your multisig wallet by selecting the number of signatures required to approve a transaction. Invite trusted parties to join the wallet, each with their own private key securely stored on their device.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Second Card */}
-              <div className="flex flex-col items-center w-full md:w-1/2">
-                <div className="flex items-center space-x-4 mb-6 relative">
-                <img src={twoVector} className='relative left-11'></img>
-                <div className='bg-gray-800 rounded-3xl py-8 px-6 w-full min-h-44 relative z-index-3'>
-                    <h3 className="text-2xl font-semibold mb-2">Approve Transactions</h3>
-                    <p className="text-gray-400">When a transaction is initiated, it requires approval from the designated number of signers. Once the required signatures are collected, the transaction is securely executed on the blockchain, ensuring maximum security and control.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      {/* First Card */}
+      <div className="flex flex-col items-center w-full md:w-1/2 sm:w-[93%] px-4 -ml-6">
+        <div className="flex items-center space-x-2 mb-6 relative">
+          <img src={oneVector} className="w-30 relative left-14" alt="Secure Setup" style={{ width: '30%' }} />
+          <div className='bg-gray-800 rounded-3xl py-8 px-4 w-full md:w-[80%] min-h-[200px] relative z-10'> {/* Set min height */}
+            <h3 className="text-2xl font-semibold mb-2 sm:text-xl">Secure Setup</h3>
+            <p className="text-gray-400">Create your multisig wallet by selecting the number of signatures required to approve a transaction. Invite trusted parties to join the wallet, each with their own private key securely stored on their device.</p>
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section className="w-full py-16 px-4 text-gray-800">
-          {/* Future of Crypto Management */}
-          <section className="w-full py-2 mt-6">
-            <div className="max-w-6xl mx-auto text-white text-center">
-              <h1 className="text-5xl mb-4 font-extrabold white-text-shadow">The Future of Secure Crypto Management</h1>
-              <h3 className="text-3xl mb-3">Key Features that Empower Your Crypto Journey</h3>
-              <p className="text-medium font-light text-stone-300 mb-12 w-2/3 mx-auto">
-                Unveil the cutting-edge features of our multisig wallet, crafted to provide top-notch security and control over your digital assets. Here are the six main features that set our wallet apart in the industry.
-              </p>
-            </div>
-
-            {/* Grid for Cards */}
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
-              {/* First Card (Odd) */}
-              <div
-                className="relative px-6 py-10 border rounded-3xl shadow-md mb-6"
-                style={{
-                  backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1D2235)`, // Odd card gradient
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  backgroundRepeat: 'no-repeat',
-                  minHeight: '400px',
-                }}
-              >
-                <img src={crypto1} className="w-15 py-4 ml-auto" />
-                <h2 className="text-2xl font-semibold mb-2">Personalised dashboard</h2>
-                <p className="mt-2 md:text-sm lg:text-md text-stone-300 font-light">
-                  Allows to view their portfolios, track transactions, monitor the market, and make transactions quickly with saved contacts.
-                </p>
-              </div>
-
-              {/* Second Card (Even) */}
-              <div
-                className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
-                style={{
-                  backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1B1E23)`, // Even card gradient
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  backgroundRepeat: 'no-repeat',
-                }}
-              >
-                <img src={crypto2} className="w-15 py-4 ml-auto" />
-                <h2 className="text-2xl font-semibold mb-2">Self-Custody Management</h2>
-                <p className="mt-2 md:text-sm lg:text-md text-stone-300 font-light">
-                  Allows to view their portfolios, track transactions, monitor the market, and make transactions quickly with saved contacts.
-                </p>
-              </div>
-
-              {/* Third Card (Odd) */}
-              <div
-                className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
-                style={{
-                  backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1D2235)`, // Odd card gradient
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  backgroundRepeat: 'no-repeat',
-                }}
-              >
-                <img src={crypto3} className="w-15 py-4 ml-auto" />
-                <h2 className="text-2xl font-semibold mb-2">Seamless Transactions</h2>
-                <p className="mt-2 md:text-sm lg:text-md text-stone-300 font-light">
-                  Allows to view their portfolios, track transactions, monitor the market, and make transactions quickly with saved contacts.
-                </p>
-              </div>
-            </div>
-
-            {/* Second Grid for Cards */}
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
-              {/* Fourth Card (Even) */}
-              <div
-                className="relative px-6 py-10 border rounded-3xl shadow-md mb-6"
-                style={{
-                  backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1B1E23)`, // Even card gradient
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  backgroundRepeat: 'no-repeat',
-                  minHeight: '400px',
-                }}
-              >
-                <img src={crypto4} className="w-15 py-4 ml-auto" />
-                <h2 className="text-2xl font-semibold mb-2">Advanced Security</h2>
-                <p className="mt-2 md:text-sm lg:text-md text-stone-300 font-light">
-                  Allows to view their portfolios, track transactions, monitor the market, and make transactions quickly with saved contacts.
-                </p>
-              </div>
-
-              {/* Fifth Card (Odd) */}
-              <div
-                className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
-                style={{
-                  backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1D2235)`, // Odd card gradient
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  backgroundRepeat: 'no-repeat',
-                }}
-              >
-                <img src={crypto5} className="w-15 py-4 ml-auto" />
-                <h2 className="text-2xl font-semibold mb-2">Custom Widgets</h2>
-                <p className="mt-2 md:text-sm lg:text-md text-stone-300 font-light">
-                  Allows to view their portfolios, track transactions, monitor the market, and make transactions quickly with saved contacts.
-                </p>
-              </div>
-
-              {/* Sixth Card (Even) */}
-              <div
-                className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
-                style={{
-                  backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1B1E23)`, // Even card gradient
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center top',
-                  backgroundRepeat: 'no-repeat',
-                }}
-              >
-                <img src={crypto6} className="w-15 py-4 ml-auto" />
-                <h2 className="text-2xl font-semibold mb-2">Comprehensive Portfolio</h2>
-                <p className="mt-2 md:text-sm lg:text-md text-stone-300 font-light">
-                  Allows to view their portfolios, track transactions, monitor the market, and make transactions quickly with saved contacts.
-                </p>
-              </div>
-            </div>
-          </section>
-        </section>
+      {/* Second Card */}
+      <div className="flex flex-col items-center w-full md:w-1/2 sm:w-[93%] px-4 -ml-6"> {/* Adjusted negative margin for symmetry */}
+        <div className="flex items-center space-x-2 mb-6 relative">
+          <img src={twoVector} className="w-30 relative left-10" alt="Approve Transactions" style={{ width: '25%' }} />
+          <div className='bg-gray-800 rounded-3xl py-8 px-4 w-full md:w-[80%] min-h-[200px] relative z-10'> {/* Set min height */}
+            <h3 className="text-2xl font-semibold mb-2 sm:text-xl">Approve Transactions</h3>
+            <p className="text-gray-400">When a transaction is initiated, it requires approval from the designated number of signers. Once the required signatures are collected, the transaction is securely executed on the blockchain, ensuring maximum security and control.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
 
-        {/*Why Choose*/}
-        <section className="w-full py-16 px-4 text-gray-800 bg-why-choose-line">
+<section className="w-full py-16 px-4 text-gray-800 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '150% 140%', backgroundSize: '60%' }}>
+  {/* Future of Crypto Management */}
+  <section className="w-full py-2 mt-6">
+    <div className="max-w-6xl mx-auto text-white text-center">
+      <h1 className="text-4xl sm:text-3xl md:text-5xl mb-4 font-extrabold white-text-shadow">
+        The Future of Secure Crypto Management
+      </h1>
+      <h3 className="text-2xl sm:text-xl md:text-3xl mb-3">
+        Key Features that Empower Your Crypto Journey
+      </h3>
+      <p className="text-base sm:text-sm md:text-medium font-light text-stone-300 mb-12 w-2/3 mx-auto">
+        Unveil the cutting-edge features of our multisig wallet, crafted to provide top-notch security and control over your digital assets. Here are the six main features that set our wallet apart in the industry.
+      </p>
+    </div>
+
+    {/* Grid for Cards */}
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+      {/* First Card (Odd) */}
+      <div
+        className="relative px-6 py-10 border rounded-3xl shadow-md mb-6"
+        style={{
+          backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1D2235)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+          minHeight: '400px',
+        }}
+      >
+        <img src={crypto1} className="w-15 py-4 ml-auto" />
+        <h2 className="text-2xl sm:text-xl font-semibold mb-2">Personalised dashboard</h2>
+        <p className="mt-2 text-sm sm:text-xs md:text-sm text-stone-300 font-light">
+          Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.
+        </p>
+      </div>
+
+      {/* Second Card (Even) */}
+      <div
+        className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
+        style={{
+          backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1B1E23)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <img src={crypto2} className="w-15 py-4 ml-auto" />
+        <h2 className="text-2xl sm:text-xl font-semibold mb-2">Enhanced with Multisig</h2>
+        <p className="mt-2 text-sm sm:text-xs md:text-sm text-stone-300 font-light">
+          Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.
+        </p>
+      </div>
+
+      {/* Third Card (Odd) */}
+      <div
+        className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
+        style={{
+          backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1D2235)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <img src={crypto3} className="w-15 py-4 ml-auto" />
+        <h2 className="text-2xl sm:text-xl font-semibold mb-2">Seamless Transactions</h2>
+        <p className="mt-2 text-sm sm:text-xs md:text-sm text-stone-300 font-light">
+          Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.
+        </p>
+      </div>
+    </div>
+
+    {/* Second Grid for Cards */}
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+      {/* Fourth Card (Even) */}
+      <div
+        className="relative px-6 py-10 border rounded-3xl shadow-md mb-6"
+        style={{
+          backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1B1E23)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+          minHeight: '400px',
+        }}
+      >
+        <img src={crypto4} className="w-15 py-4 ml-auto" />
+        <h2 className="text-2xl sm:text-xl font-semibold mb-2">Advanced Security</h2>
+        <p className="mt-2 text-sm sm:text-xs md:text-sm text-stone-300 font-light">
+          Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.
+        </p>
+      </div>
+
+      {/* Fifth Card (Odd) */}
+      <div
+        className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
+        style={{
+          backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1D2235)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <img src={crypto5} className="w-15 py-4 ml-auto" />
+        <h2 className="text-2xl sm:text-xl font-semibold mb-2">Custom Widgets</h2>
+        <p className="mt-2 text-sm sm:text-xs md:text-sm text-stone-300 font-light">
+          Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.
+        </p>
+      </div>
+
+      {/* Sixth Card (Even) */}
+      <div
+        className="relative py-10 px-6 border rounded-3xl shadow-md mb-6"
+        style={{
+          backgroundImage: `url(${zigBg}), linear-gradient(to top, #121318, #1B1E23)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <img src={crypto6} className="w-15 py-4 ml-auto" />
+        <h2 className="text-2xl sm:text-xl font-semibold mb-2">Comprehensive Portfolio</h2>
+        <p className="mt-2 text-sm sm:text-xs md:text-sm text-stone-300 font-light">
+          Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.
+        </p>
+      </div>
+    </div>
+  </section>
+</section>
+</section>
+
+
+
+
+
+{/*Why Choose*/}
+
+<section className="w-full py-16 px-4 text-gray-800 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '-50% -40%', backgroundSize: '60%' }}>
+<section className="w-full py-16 px-4 text-gray-800 bg-why-choose-line">
           <div className="max-w-5xl mx-auto py-12 px-12  gap-8 text-white rounded-custom bg-gradient-to-t from-zinc-900 to-neutral-900">
             <div className="md:col-span-2 max-w-3xl mx-auto">
               <h2 className="text-4xl font-extrabold">Why Choose Our Multisig Wallet?</h2>
@@ -521,8 +540,7 @@ function App() {
             </div>
           </div>
         </section>
-      </section>
-
+</section>
 
 
 
@@ -531,6 +549,7 @@ function App() {
 
       {/* Download */}
 
+      <section className="w-full bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '180% 0%', backgroundSize: '65%' }}>
       <section className="w-full py-16 text-gray-800">
         <div className="w-full mx-auto gap-8 text-white relative bg-gradient-to-t from-zinc-900 to-neutral-900 px-4 sm:px-8"> {/* Added padding */}
           <div className="max-w-6xl mx-auto relative">
@@ -562,146 +581,129 @@ function App() {
 
 
       {/* FAQ Section */}
-      <section className="w-full py-16 mt-16">
-        <div className="w-full py-16 px-4 text-gray-800">
+      <section className="w-full mt-16 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '-60% 0%', backgroundSize: '65%' }}>
+        <div className="w-full px-4 text-gray-800">
           <div className="max-w-6xl mx-auto gap-8 text-white">
-            <h1 className="text-5xl text-white mb-8">FAQ</h1>
+            <h1 className="text-5xl font-extrabold text-white mb-8">FAQ</h1>
 
             {/* FAQ Item 1 */}
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-blue-600">01</span>
+                <span className="text-custom-2xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
               </div>
+              
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+                <img src={exit}></img>
               </div>
             </div>
+
+            <hr></hr>
+
 
             {/* FAQ Item 1 Answer */}
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <p className="text-stone-300">A multisig (multi-signature) crypto wallet is a digital wallet that requires multiple private keys to authorize a transaction. This enhances security by ensuring that more than one person or device must approve a transaction before it is executed. For instance, in a 2-of-3 multisig wallet, two out of three designated private keys must approve a transaction.</p>
+                <p className="text-stone-300 text-lg">A multisig (multi-signature) crypto wallet is a digital wallet that requires multiple private keys to authorize a transaction. This enhances security by ensuring that more than one person or device must approve a transaction before it is executed. For instance, in a 2-of-3 multisig wallet, two out of three designated private keys must approve a transaction.</p>
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-300">02</span>
+                <span className="text-custom-2xl font-bold text-white">How does a multisig wallet enhance security?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+              <img src={plus}></img>
+
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-300">03</span>
+                <span className="text-custom-2xl font-bold text-white">What does it mean that the wallet stores secret keys on the device’s keychain?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+              <img src={plus}></img>
+
+              </div>
+            </div>
+ 
+            <div className="flex justify-between items-center py-6 rounded-lg">
+              <div className="flex space-x-4">
+                <span className="text-custom-2xl font-semibold text-stone-300">04</span>
+                <span className="text-custom-2xl font-bold text-white">What are the different configurations of a multisig wallet?</span>
+              </div>
+              <div className="flex items-center">
+              <img src={plus}></img>
+
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-300">05</span>
+                <span className="text-custom-2xl font-bold text-white">How does the keychain storage enhance security in a multisig wallet?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+              <img src={plus}></img>
+
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-3000">06</span>
+                <span className="text-custom-2xl font-bold text-white">What happens if one of the keys in a multisig wallet is lost, especially with keychain storage?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+              <img src={plus}></img>
+
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-300">07</span>
+                <span className="text-custom-2xl font-bold text-white">Are multisig wallets compatible with all cryptocurrencies?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+              <img src={plus}></img>
+
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-300">08</span>
+                <span className="text-custom-2xl font-bold text-white">How do transaction approvals work in a multisig wallet with keychain-stored keys?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+              <img src={plus}></img>
+
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-3000">09</span>
+                <span className="text-custom-2xl font-bold text-white">What are the potential downsides of using a multisig wallet with keychain-stored keys?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
+              <img src={plus}></img>
+
               </div>
             </div>
 
             <div className="flex justify-between items-center py-6 rounded-lg">
               <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
+                <span className="text-custom-2xl font-semibold text-stone-300">10</span>
+                <span className="text-custom-2xl font-bold text-white w-4/5">How does a multisig wallet with keychain-stored keys compare to a standard single-signature wallet?</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
-              </div>
-            </div>
+              <img src={plus}></img>
 
-            <div className="flex justify-between items-center py-6 rounded-lg">
-              <div className="flex space-x-4">
-                <span className="text-custom-xl font-semibold text-blue-600">01</span>
-                <span className="text-custom-xl font-semibold text-blue-600">What is a multisig crypto wallet?</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 3a7 7 0 100 14 7 7 0 000-14zm0 12a5 5 0 110-10 5 5 0 010 10z" />
-                  <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
-                </svg>
               </div>
             </div>
 
@@ -710,6 +712,7 @@ function App() {
 
           </div>
         </div>
+      </section>
       </section>
 
 
@@ -786,44 +789,44 @@ function App() {
               </div>
 
               {/* Right Side: Small Cards */}
-              <div className="md:w-2/3 flex flex-wrap justify-end gap-4"> {/* Added justify-end */}
+              <div className="md:w-2/3 flex flex-wrap justify-end sm:justify-center gap-4"> {/* Added justify-end */}
                 {/* Card 1 */}
                 <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4"> {/* Adjust width */}
-                  <div className='rounded-in-up absolute top-0'></div>
+                  <div className='rounded-in-up absolute top-2'></div>
                   <img src={IOS} alt="Logo" className="mb-2 z-10 w-12" />
                 </div>
 
                 {/* Card 2 */}
                 <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4"> {/* Adjust width */}
-                  <div className='rounded-in-down absolute top-0'></div>
+                  <div className='rounded-in-down absolute top-2'></div>
 
                   <img src={android} alt="Logo" className="mb-2 z-10 w-12" />
                 </div>
 
                 {/* Card 3 */}
                 <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4"> {/* Adjust width */}
-                  <div className='rounded-in-up absolute top-0'></div>
+                  <div className='rounded-in-up absolute top-2'></div>
 
                   <img src={mac} alt="Logo" className="mb-2 z-10 w-12" />
                 </div>
 
                 {/* Card 4 */}
                 <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4"> {/* Adjust width */}
-                  <div className='rounded-in-down absolute top-0'></div>
+                  <div className='rounded-in-down absolute top-2'></div>
 
                   <img src={chrome} alt="Logo" className="mb-2 z-10 w-12" />
                 </div>
 
                 {/* Card 5 */}
                 <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4"> {/* Adjust width */}
-                  <div className='rounded-in-up absolute top-0'></div>
+                  <div className='rounded-in-up absolute top-2'></div>
 
                   <img src={brave} alt="Logo" className="mb-2 z-10 w-12" />
                 </div>
 
                 {/* Card 6 */}
                 <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4"> {/* Adjust width */}
-                  <div className='rounded-in-down absolute top-0'></div>
+                  <div className='rounded-in-down absolute top-2'></div>
 
                   <img src={edge} alt="Logo" className="mb-2 z-10 w-12" />
                 </div>

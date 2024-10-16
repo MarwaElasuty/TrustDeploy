@@ -6,7 +6,9 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full flex justify-evenly items-center p-4 relative">
+    
+    
+    <header className="w-full flex justify-evenly items-center p-4 relative ">
       {/* Logo Section */}
       <div className="flex gap-x-4 items-center">
         <img src={trustLogo} alt="TrustLogo" />
@@ -26,13 +28,6 @@ export default function Header() {
     {/* <img src={roundedDownload} className='absolute bottom-2 right-2 w-6 h-6' alt="Download" /> */}
   </button>
 </div>
-
-
-
-
-
-
-
 
 
 
