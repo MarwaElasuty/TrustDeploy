@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TrustDeploy/static/css/main.db7845af.css",
-    "main.js": "/TrustDeploy/static/js/main.6cb36274.js",
+    "main.css": "/TrustDeploy/static/css/main.3e0b3c9d.css",
+    "main.js": "/TrustDeploy/static/js/main.9aa23662.js",
     "static/js/453.0ab489a9.chunk.js": "/TrustDeploy/static/js/453.0ab489a9.chunk.js",
     "static/media/download-app.svg": "/TrustDeploy/static/media/download-app.4b01f6dbf388d6aea5b935129e90d1f4.svg",
     "static/media/download.svg": "/TrustDeploy/static/media/download.7633be72af7a28e4924ad836bc42ecdd.svg",
@@ -31,6 +31,7 @@
     "static/media/feature1.svg": "/TrustDeploy/static/media/feature1.56e9f7bb6fa9b75dbce16db1d8855486.svg",
     "static/media/feature3.svg": "/TrustDeploy/static/media/feature3.bca06b6e8beb32601c7a363bdc5670d9.svg",
     "static/media/mac.svg": "/TrustDeploy/static/media/mac.bd49e929ff957cfd422ca95fb2ff8318.svg",
+    "static/media/next-level-shadow.svg": "/TrustDeploy/static/media/next-level-shadow.4b72435ff1cc669cd8540fb6640e8f25.svg",
     "static/media/brave.svg": "/TrustDeploy/static/media/brave.674e76cb12b8d5a2377a4f8d1b81dc39.svg",
     "static/media/IOS.svg": "/TrustDeploy/static/media/IOS.76171126339ac5a37fd299c5bd1ce0cf.svg",
     "static/media/buttonBlur.svg": "/TrustDeploy/static/media/buttonBlur.1e2a20d6f1d1608260256a30574ca82c.svg",
@@ -50,21 +51,23 @@
     "static/media/main-bg.svg": "/TrustDeploy/static/media/main-bg.18ac7bc30fdbd127b170.svg",
     "static/media/googlePlay.svg": "/TrustDeploy/static/media/googlePlay.9f27d23eada196461f6dfcf6adff869f.svg",
     "static/media/one-vector.svg": "/TrustDeploy/static/media/one-vector.5e4ec1d9845d141b90c6b1dcb8538697.svg",
+    "static/media/exit.svg": "/TrustDeploy/static/media/exit.927e5dd2e244d97c0861db7f8fbf680f.svg",
     "static/media/footerFacebook.svg": "/TrustDeploy/static/media/footerFacebook.70b29fa914afc4eb2f33bc253a102118.svg",
     "static/media/email.svg": "/TrustDeploy/static/media/email.403ba64f0659bd5fcb254a0025445c31.svg",
     "static/media/full-screen-shadow.svg": "/TrustDeploy/static/media/full-screen-shadow.5902039a972a62322712.svg",
+    "static/media/plus.svg": "/TrustDeploy/static/media/plus.a41820f1009f6a45e9890879460dfa57.svg",
     "static/media/letsTalk-shadow.svg": "/TrustDeploy/static/media/letsTalk-shadow.9db72c400a7bcdc0baf1c9e59628f35a.svg",
     "static/media/linear-line.svg": "/TrustDeploy/static/media/linear-line.bab3ef687d8e87e33f98323aa641856f.svg",
     "static/media/benefit-shadow.svg": "/TrustDeploy/static/media/benefit-shadow.ab3a0874c4ff6697f8a22681e8a48837.svg",
     "static/media/download-app-shadow.svg": "/TrustDeploy/static/media/download-app-shadow.775fca59be89a5bb1736fdc37e32f452.svg",
     "static/media/footerTwitter.svg": "/TrustDeploy/static/media/footerTwitter.2835b06668cbbfdf46601819be16efa1.svg",
     "static/media/roundedDownload.svg": "/TrustDeploy/static/media/roundedDownload.41eff344ad666e878ac908ad38578eee.svg",
-    "main.db7845af.css.map": "/TrustDeploy/static/css/main.db7845af.css.map",
-    "main.6cb36274.js.map": "/TrustDeploy/static/js/main.6cb36274.js.map",
+    "main.3e0b3c9d.css.map": "/TrustDeploy/static/css/main.3e0b3c9d.css.map",
+    "main.9aa23662.js.map": "/TrustDeploy/static/js/main.9aa23662.js.map",
     "453.0ab489a9.chunk.js.map": "/TrustDeploy/static/js/453.0ab489a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db7845af.css",
-    "static/js/main.6cb36274.js"
+    "static/css/main.3e0b3c9d.css",
+    "static/js/main.9aa23662.js"
   ]
 }
