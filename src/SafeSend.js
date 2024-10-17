@@ -51,7 +51,7 @@ const SafeSend = () => {
                             <h2 className="text-5xl font-bold mb-2 w-1/2">Introducing <span className='text-lime-400'>SafeSend</span> <span className='text-3xl'>by trustvault</span></h2>
                             <h3 className='text-xl font-bold mb-4 mt-4'>Secure and Stress-Free Crypto Transfers</h3>
                             <p className="text-stone-300 mb-3">
-                            Say goodbye to transaction anxiety and hello to seamless, secure transfers with SafeSend, the innovative feature that protects your crypto assets.                            </p>
+                                Say goodbye to transaction anxiety and hello to seamless, secure transfers with SafeSend, the innovative feature that protects your crypto assets.                            </p>
 
                         </div>
                         <img src={introSafeSend} alt="First Image" className="w-full md:w-1/2 rounded-lg" />
@@ -60,7 +60,7 @@ const SafeSend = () => {
                 </div>
             </section>
 
-            <div className="max-w-6xl mx-auto py-12 px-12  gap-8 text-white rounded-custom">
+            <div className="max-w-6xl mx-auto  gap-8 text-white rounded-custom">
                 <div className="md:col-span-2 max-w-5xl mx-auto">
                     <h2 className="text-4xl font-extrabold">Why Choose Our Multisig Wallet?</h2>
                     <h3 className="font-light text-stone-300 text-lg">
@@ -80,7 +80,7 @@ const SafeSend = () => {
                                 </div>
                                 <p className="text-stone-300 mb-3 mt-1">
                                     Enter the recipient's address and amount.</p>
-                                    <div className='flex items-center gap-2'>
+                                <div className='flex items-center gap-2'>
                                     <div className='rounded-full h-9 w-9 bg-lime-400 py-2 px-2 text-center flex items-center justify-center'>
                                         <p className='text-black font-bold text-lg'>1</p>
                                     </div>
@@ -88,8 +88,8 @@ const SafeSend = () => {
 
                                 </div>
                                 <p className="text-stone-300 mb-3 mt-1">
-                                SafeSend sends a small test transfer to verify the recipient's address.</p>
-                                    <div className='flex items-center gap-2'>
+                                    SafeSend sends a small test transfer to verify the recipient's address.</p>
+                                <div className='flex items-center gap-2'>
                                     <div className='rounded-full h-9 w-9 bg-lime-400 py-2 px-2 text-center flex items-center justify-center'>
                                         <p className='text-black font-bold text-lg'>1</p>
                                     </div>
@@ -97,8 +97,8 @@ const SafeSend = () => {
 
                                 </div>
                                 <p className="text-stone-300 mb-3 mt-1">
-                                The recipient receives an OTP to confirm the transfer.</p>
-                                    <div className='flex items-center gap-2'>
+                                    The recipient receives an OTP to confirm the transfer.</p>
+                                <div className='flex items-center gap-2'>
                                     <div className='rounded-full h-9 w-9 bg-lime-400 py-2 px-2 text-center flex items-center justify-center'>
                                         <p className='text-black font-bold text-lg'>1</p>
                                     </div>
@@ -106,16 +106,16 @@ const SafeSend = () => {
 
                                 </div>
                                 <p className="text-stone-300 mb-3 mt-1">
-                                Once verified, the full amount is released.</p>
+                                    Once verified, the full amount is released.</p>
                             </div>
-                            
+
                             <img src={whychoose1} alt="First Image" className="w-full md:w-1/2 rounded-lg" />
                         </div>
 
                         <div className="flex flex-col md:flex-row items-start md:space-x-8 py-6 rounded-lg">
                             <img src={whychoose2} alt="Second Image" className="w-full md:w-1/2 rounded-lg" />
                             <div className="flex-1">
-                                <h2 className="text-2xl font-bold mb-4">Full Control and Flexibility</h2>
+                                <h2 className="text-2xl font-bold mt-4 mb-4">Full Control and Flexibility</h2>
                                 <p className="text-stone-300 mb-1">
                                     - Eliminates Crypto Clipping: No more lost funds due to incorrect addresses.
                                 </p>
@@ -132,8 +132,8 @@ const SafeSend = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="max-w-6xl mx-auto space-y-16 mt-10">
-                        <div className="flex flex-col md:flex-row items-start md:space-x-8 py-6 rounded-lg">
+                    <div className="max-w-6xl mx-auto mt-10">
+                        <div className="flex flex-col md:flex-row items-start md:space-x-8 rounded-lg">
                             <div className="flex-1">
                                 <h2 className="text-2xl font-bold mb-4">Enhanced Security and
                                     Peace of Mind</h2>
@@ -143,7 +143,7 @@ const SafeSend = () => {
                                 <p className="text-stone-300 mb-1">
                                     - Eliminates Crypto Clipping: No more lost funds due to incorrect addresses.
                                 </p>
-                               
+
 
                                 <p className="text-stone-300 mb-1">
                                     - Eliminates Crypto Clipping: No more lost funds due to incorrect addresses.
@@ -167,56 +167,54 @@ const SafeSend = () => {
                 </div>
             </div>
 
-            <section className="w-full px-4  mt-16 mb-16">
-                <div className="max-w-7xl flex justify-between mx-auto px-1 gap-8 text-white">
-                    <div className='w-full flex items-center justify-evenly'>
-                        <img src={redExit} alt="Exit Icon" />
-                        <h3 className='text-xl font-bold'>Common Problems in Crypto Payments</h3>
-                        <img src={plus} alt="Plus Icon" />
-                    </div>
-                    <div className='w-full flex items-center justify-evenly'>
-                        <img src={correct} alt="Exit Icon" />
-                        <h3 className='text-xl font-bold'>Common Problems in Crypto Payments</h3>
-                        <img src={plus} alt="Plus Icon" />
-                    </div>
-                </div>
-                <div className="max-w-7xl flex justify-between mx-auto px-1 gap-8 text-white mt-4">
-                    <div className='w-full bg-gray-800 py-6 px-6 border-2 border-stone-300 relative' style={{ borderRadius: '36px' }}>
-                        <img src={redLine} style={{ position: 'absolute', left: '-4px', top: '110px' }}></img>
-                        <h3 className='text-xl font-bold mt-5'>Crypto Clipping</h3>
-                        <p className='font-normal mt-1'>Accidental clipping of malware infected addresses when copying and pasting can lead to funds being sent to the wrong recipient, resulting in a permanent loss of assets.</p>
-                        <h3 className='text-xl font-bold mt-5'>Incorrect Address Sends</h3>
-                        <p className='font-normal mt-1'>Sending funds to an incorrect or invalid address can be catastrophic, with no way to recover the lost cryptocurrency.</p>
+            <section className="w-full px-4 mt-16 mb-16">
+  <div className="max-w-7xl flex flex-wrap justify-between mx-auto px-1 gap-8 text-white">
+    <div className="container w-full md:w-1/2">
+      <div className="w-full flex items-center justify-evenly">
+        <img src={redExit} alt="Exit Icon" />
+        <h3 className="text-xl font-bold">Common Problems in Crypto Payments</h3>
+        <img src={plus} alt="Plus Icon" />
+      </div>
 
-                        <h3 className='text-xl font-bold mt-5'>CHigh-Stress Transactions</h3>
-                        <p className='font-normal mt-1'>Sending large amounts can be nerve-wracking, with the fear of making a mistake that could cost thousands or even millions in assets.</p>
+      <div className="w-full bg-gray-800 py-6 px-6 border-2 border-white relative mt-4" style={{ borderRadius: '36px' }}>
+        <img src={greenLine} style={{ position: 'absolute', right: '-4px', top: '110px' }} />
+        <h3 className="text-xl font-bold mt-5">Crypto Clipping</h3>
+        <p className="font-normal mt-1">Accidental clipping of malware infected addresses when copying and pasting can lead to funds being sent to the wrong recipient, resulting in a permanent loss of assets.</p>
+        <h3 className="text-xl font-bold mt-5">Incorrect Address Sends</h3>
+        <p className="font-normal mt-1">Sending funds to an incorrect or invalid address can be catastrophic, with no way to recover the lost cryptocurrency.</p>
+        <h3 className="text-xl font-bold mt-5">High-Stress Transactions</h3>
+        <p className="font-normal mt-1">Sending large amounts can be nerve-wracking, with the fear of making a mistake that could cost thousands or even millions in assets.</p>
+        <h3 className="text-xl font-bold mt-5">Lack of Verification</h3>
+        <p className="font-normal mt-1">Many wallets don't offer a confirmation step before finalizing transactions, increasing the risk of errors and misdirected funds.</p>
+        <h3 className="text-xl font-bold mt-5">Irreversible Errors</h3>
+        <p className="font-normal mt-1">Once a crypto transaction is sent, it’s irreversible. This leaves no room for correcting mistakes or retrieving funds sent to the wrong address.</p>
+      </div>
+    </div>
 
-                        <h3 className='text-xl font-bold mt-5'>Lack of Verification</h3>
-                        <p className='font-normal mt-1'>Many wallets don’t offer a confirmation step before finalizing transactions, increasing the risk of errors and misdirected funds.</p>
+    <div className="container w-full md:w-1/2">
+      <div className="w-full flex items-center justify-evenly">
+        <img src={redExit} alt="Exit Icon" />
+        <h3 className="text-xl font-bold">Common Problems in Crypto Payments</h3>
+        <img src={plus} alt="Plus Icon" />
+      </div>
 
-                        <h3 className='text-xl font-bold mt-5'>Irreversible Errors</h3>
-                        <p className='font-normal mt-1'>Once a crypto transaction is sent, it’s irreversible. This leaves no room for correcting mistakes or retrieving funds sent to the wrong address.</p>
-                    </div>
+      <div className="w-full bg-gray-800 py-6 px-6 border-2 border-stone-300 relative mt-4" style={{ borderRadius: '36px' }}>
+        <img src={redLine} style={{ position: 'absolute', left: '-4px', top: '110px' }} />
+        <h3 className="text-xl font-bold mt-5">Crypto Clipping</h3>
+        <p className="font-normal mt-1">Accidental clipping of malware infected addresses when copying and pasting can lead to funds being sent to the wrong recipient, resulting in a permanent loss of assets.</p>
+        <h3 className="text-xl font-bold mt-5">Incorrect Address Sends</h3>
+        <p className="font-normal mt-1">Sending funds to an incorrect or invalid address can be catastrophic, with no way to recover the lost cryptocurrency.</p>
+        <h3 className="text-xl font-bold mt-5">High-Stress Transactions</h3>
+        <p className="font-normal mt-1">Sending large amounts can be nerve-wracking, with the fear of making a mistake that could cost thousands or even millions in assets.</p>
+        <h3 className="text-xl font-bold mt-5">Lack of Verification</h3>
+        <p className="font-normal mt-1">Many wallets don’t offer a confirmation step before finalizing transactions, increasing the risk of errors and misdirected funds.</p>
+        <h3 className="text-xl font-bold mt-5">Irreversible Errors</h3>
+        <p className="font-normal mt-1">Once a crypto transaction is sent, it’s irreversible. This leaves no room for correcting mistakes or retrieving funds sent to the wrong address.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    <div className='w-full bg-gray-800 py-6 px-6 border-2 border-white relative' style={{ borderRadius: '36px' }}>
-                        <img src={greenLine} style={{ position: 'absolute', right: '-4px', top: '110px' }}></img>
-                        <h3 className='text-xl font-bold mt-5'>Crypto Clipping</h3>
-                        <p className='font-normal mt-1'>Accidental clipping of malware infected addresses when copying and pasting can lead to funds being sent to the wrong recipient, resulting in a permanent loss of assets.</p>
-
-                        <h3 className='text-xl font-bold mt-5'>Incorrect Address Sends</h3>
-                        <p className='font-normal mt-1'>Sending funds to an incorrect or invalid address can be catastrophic, with no way to recover the lost cryptocurrency.</p>
-
-                        <h3 className='text-xl font-bold mt-5'>CHigh-Stress Transactions</h3>
-                        <p className='font-normal mt-1'>Sending large amounts can be nerve-wracking, with the fear of making a mistake that could cost thousands or even millions in assets.</p>
-
-                        <h3 className='text-xl font-bold mt-5'>Lack of Verification</h3>
-                        <p className='font-normal mt-1'>Many wallets don't offer a confirmation step before finalizing transactions, increasing the risk of errors and misdirected funds.</p>
-
-                        <h3 className='text-xl font-bold mt-5'>Irreversible Errors</h3>
-                        <p className='font-normal mt-1'>Once a crypto transaction is sent, it’s irreversible. This leaves no room for correcting mistakes or retrieving funds sent to the wrong address.</p>
-                    </div>
-                </div>
-            </section>
 
             <section className="w-full py-16 px-4 text-gray-800 mt-12 relative">
                 {/* Transparent Div with Solid Black Shadow at the Bottom */}
