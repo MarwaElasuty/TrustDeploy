@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import trustLogo from './images/trustvault.svg';
-import roundedDownload from './images/roundedDownload.svg';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,8 +17,13 @@ export default function Header() {
       {/* Menu Section for larger screens */}
       <div className="hidden md:flex text-white items-center gap-x-7">
         <ul className="flex items-center gap-x-6 text-lg">
-          <li className="hover:text-gray-300">Home</li>
-          <li className="hover:text-gray-300">SafeSend</li>
+
+          <li className="hover:text-gray-300">
+          <Link to="/">Home</Link>
+          </li>
+          <li className="hover:text-gray-300">
+          <Link to="/safesend">SafeSend</Link>
+          </li>
           <li className="hover:text-gray-300">Press & Partners</li>
           <li className="hover:text-gray-300">Blog</li>
         </ul>
@@ -27,6 +32,7 @@ export default function Header() {
     Download
     {/* <img src={roundedDownload} className='absolute bottom-2 right-2 w-6 h-6' alt="Download" /> */}
   </button>
+  
 </div>
 
 

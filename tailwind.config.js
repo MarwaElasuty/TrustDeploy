@@ -31,7 +31,9 @@ module.exports = {
         'custom-5xl': '48px',  // 5X Large
         'custom-6xl': '64px',  // 6X Large
       },
-      
+      spacing: {
+        '1.4': '5px', // Custom spacing for position left
+      },
     },
   },
   plugins: [],
