@@ -55,9 +55,13 @@ export default function Header() {
       {menuOpen && (
         <div className="absolute text-center cursor-pointer top-24 left-0 w-full z-50 bg-gradient-to-t from-neutral-950 to-zinc-900 text-white p-4 flex flex-col space-y-4 md:hidden">
           <ul className="space-y-4">
-            <li className="hover:text-gray-300">Home</li>
-            <li className="hover:text-gray-300">SafeSend</li>
-            <li className="hover:text-gray-300">Press & Partners</li>
+          <li className="hover:text-gray-300">
+          <Link to="/">Home</Link>
+          </li>
+                      <li className="hover:text-gray-300">
+          <Link to="/safesend">SafeSend</Link>
+          </li>
+                      <li className="hover:text-gray-300">Press & Partners</li>
             <li className="hover:text-gray-300">Blog</li>
           </ul>
           <button className="border-2 border-zinc-900 rounded-3xl px-8 py-3">Download</button>
