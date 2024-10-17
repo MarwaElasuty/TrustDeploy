@@ -168,7 +168,7 @@ const SafeSend = () => {
             </div>
 
             <section className="w-full px-4 mt-16 mb-16">
-  <div className="max-w-7xl flex flex-wrap justify-between mx-auto px-1 gap-8 text-white">
+  <div className="max-w-7xl flex sm:flex-wrap md:flex-nowrap justify-between mx-auto px-1 gap-8 text-white">
     <div className="container w-full md:w-1/2">
       <div className="w-full flex items-center justify-evenly">
         <img src={redExit} alt="Exit Icon" />
@@ -214,6 +214,8 @@ const SafeSend = () => {
     </div>
   </div>
 </section>
+
+
 
 
             <section className="w-full py-16 px-4 text-gray-800 mt-12 relative">
@@ -514,7 +516,7 @@ const SafeSend = () => {
                 </section>
             </section>
 
-            <section className="max-w-7xl max-auto bg-next-level bg-cover bg-no-repeat py-14" style={{ backgroundPosition: '-50% 5%', backgroundSize: '75%' }}>
+            <section className="max-w-7xl mx-auto bg-next-level bg-cover bg-no-repeat py-14" style={{ backgroundPosition: '-50% 5%', backgroundSize: '75%' }}>
     <div className="w-full py-16 px-4 text-center">
         <div className="mx-auto space-y-16">
             {/* First Section */}
