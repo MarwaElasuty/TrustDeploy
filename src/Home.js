@@ -307,57 +307,70 @@ const Home = () => {
         </section>
   
   
-        <section className="w-full py-16 px-4  bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '150% 50%', backgroundSize: '60%' }}>
-          <h1 className='text-5xl white-text-shadow mb-10 text-center font-extrabold'>Benefits</h1>
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 py-12 text-white justify-items-center bg-benefits-bg bg-cover bg-no-repeat">
+        <section className="w-full py-16 px-4 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '150% 50%', backgroundSize: '60%' }}>
+  <style jsx>{`
+    @media (max-width: 768px) {
+      .bg-benefits-bg {
+        background-image: none; /* Remove background on smaller screens */
+      }
+      .bg-full-screen-shadow {
+        background-position: 150% -7%; /* Update background position */
+        background-size: 100%; /* Update background size */
+      }
+    }
+    
+    @media (min-width: 769px) {
+      .bg-benefits-bg {
+        background-size: 100%; /* Make background size 100% on larger screens */
+      }
+    }
+  `}</style>
   
-              {/* Left Card */}
-              <div className="flex flex-col items-center text-center min-h-64 h-full px-4">
-              <div>
-              <img src={benefit1} alt="Feature 1" className="mb-7" />
-              </div>
-               <div className='mt-4'>
-               <h2 className="text-xl font-semibold mb-2">Enhanced Security</h2>
-                <h4 className="text-base font-light mb-5 w-full sm:w-48 mx-auto">Protect your assets with multisig protection</h4>
-                <p className="text-sm text-stone-300 w-full sm:w-72 mx-auto flex-grow">Mitigate the risk of unauthorized transactions and ensure secure storage.</p>
-                </div>
-               
-              </div>
-  
-              {/* Middle Card with Background Image */}
-              <div className="flex flex-col items-center text-center relative min-h-64 h-full px-4">
-                {/* Background Image Placeholder */}
-                <div className="relative"></div>
-                <img src={benefitShadow} className='absolute -top-20'></img>
-                <img src={benefit2} alt="Feature 2" className="mb-7 z-10" />
+  <h1 className='text-5xl white-text-shadow mb-10 text-center font-extrabold'>Benefits</h1>
+  <div className="max-w-6xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 py-12 text-white justify-items-center bg-benefits-bg bg-cover bg-no-repeat">
+      
+      {/* Left Card */}
+      <div className="flex flex-col items-center text-center min-h-64 h-full px-4">
+        <div>
+          <img src={benefit1} alt="Feature 1" className="mb-7" />
+        </div>
+        <div className='mt-4'>
+          <h2 className="text-xl font-semibold mb-2">Enhanced Security</h2>
+          <h4 className="text-base font-light mb-5 w-full sm:w-48 mx-auto">Protect your assets with multisig protection</h4>
+          <p className="text-sm text-stone-300 w-full sm:w-72 mx-auto flex-grow">Mitigate the risk of unauthorized transactions and ensure secure storage.</p>
+        </div>
+      </div>
 
-            
-                <div className='mt-4'>
-                <h2 className="text-xl font-semibold mb-2 z-10 relative z-index-3">Collaborative Management</h2>
-                <h4 className="text-base font-light mb-5 z-10 w-full sm:w-48 mx-auto">Manage crypto with others, securely</h4>
-                <p className="text-sm text-stone-300 z-10 w-full sm:w-72 mx-auto flex-grow">Multisig enables shared management of crypto assets, with built-in security.</p>
-                </div>
-                
-              </div>
-  
-              {/* Right Card */}
-              <div className="flex flex-col items-center text-center min-h-64 h-full px-4">
-               <div>
-               <img src={benefit3} alt="Feature 3" />
-               </div>
-              <div className='mt-4'>
-              <h2 className="text-xl font-semibold mb-2">Flexibility</h2>
-                <h4 className="text-base font-light mb-5 w-full sm:w-48 mx-auto">Customize your multisig settings</h4>
-                <p className="text-sm text-stone-300 w-full sm:w-72 mx-auto flex-grow">Choose the number of signatures required and assign roles for tailored security</p>
-              </div>
-               
-              </div>
-  
-            </div>
-          </div>
-          </section>
-  
+      {/* Middle Card with Background Image */}
+      <div className="flex flex-col items-center text-center relative min-h-64 h-full px-4">
+        <div className="relative"></div>
+        <img src={benefitShadow} className='absolute -top-20'></img>
+        <img src={benefit2} alt="Feature 2" className="mb-7 z-10" />
+        <div className='mt-4'>
+          <h2 className="text-xl font-semibold mb-2 z-10 relative z-index-3">Collaborative Management</h2>
+          <h4 className="text-base font-light mb-5 z-10 w-full sm:w-48 mx-auto">Manage crypto with others, securely</h4>
+          <p className="text-sm text-stone-300 z-10 w-full sm:w-72 mx-auto flex-grow">Multisig enables shared management of crypto assets, with built-in security.</p>
+        </div>
+      </div>
+
+      {/* Right Card */}
+      <div className="flex flex-col items-center text-center min-h-64 h-full px-4">
+        <div>
+          <img src={benefit3} alt="Feature 3" />
+        </div>
+        <div className='mt-4'>
+          <h2 className="text-xl font-semibold mb-2">Flexibility</h2>
+          <h4 className="text-base font-light mb-5 w-full sm:w-48 mx-auto">Customize your multisig settings</h4>
+          <p className="text-sm text-stone-300 w-full sm:w-72 mx-auto flex-grow">Choose the number of signatures required and assign roles for tailored security</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
           <section className="w-full bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '-65% -40%', backgroundSize: '75%' }}>
         <section className="w-full mt-16 mb-12 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '-65% -60%', backgroundSize: '75%' }}>
     <div className="max-w-6xl mx-auto text-white">
@@ -785,6 +798,25 @@ const Home = () => {
       .bg-next-level {
         background-image: none; /* Remove background image on smaller screens */
       }
+      footer {
+        flex-direction: column; /* Stack footer columns on smaller screens */
+      }
+      .footer-right-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+        gap: 16px; /* Adjust spacing between items */
+      }
+      .footer-info-text {
+        width: 100%; /* Make text full width */
+      }
+    }
+    @media (max-width: 640px) {
+      .footer-info-text {
+        width: 100% !important; /* Ensure full width on very small screens */
+      }
+      .footer-right-section {
+        grid-template-columns: 1fr; /* Stack items in a single column on extra small screens */
+      }
     }
   `}</style>
 
@@ -802,27 +834,15 @@ const Home = () => {
 
         {/* Right Side: Small Cards */}
         <div className="md:w-2/3 flex flex-wrap justify-center md:justify-end gap-4">
-          {/* Card 1 */}
+          {/* Cards */}
           <img src={ios} alt="iOS" className="w-[10%] md:w-[10%] max-w-[80px] mb-4" />
-
-          {/* Card 2 */}
           <img src={android} alt="Android" className="w-[10%] md:w-[10%] max-w-[80px] mb-4" />
-
-          {/* Card 3 */}
           <img src={mac} alt="Mac" className="w-[10%] md:w-[10%] max-w-[80px] mb-4" />
-
-          {/* Card 4 */}
           <img src={chrome} alt="Chrome" className="w-[10%] md:w-[10%] max-w-[80px] mb-4" />
-
-          {/* Card 5 */}
           <img src={brave} alt="Brave" className="w-[10%] md:w-[10%] max-w-[80px] mb-4" />
-
-          {/* Card 6 */}
           <img src={edge} alt="Edge" className="w-[10%] md:w-[10%] max-w-[80px] mb-4" />
         </div>
       </div>
-
-      {/* Footer Section */}
     </div>
   </div>
 
@@ -833,11 +853,13 @@ const Home = () => {
         <img src={trustLogo} alt="Trust Logo" />
         <p className="mb-3 mt-3 max-w-md">We are a farsighted team specializing in IT and software development for crypto business. Our company offers turn-key solutions with no hassle.</p>
         <p className='mb-3 mt-3'>Email: info@trustvault.app</p>
-        <p className='max-w-lg mb-3 mt-3' style={{ width: '80%' }}>The information provided on this website is for informational purposes only and should not be considered as financial or investment advice. Cryptocurrency transactions carry inherent risks, including the potential loss of funds. While we employ advanced security measures, such as our SafeSend feature, to protect your assets, we cannot guarantee the absolute security of your funds. Always ensure that you are using the correct wallet addresses and follow best practices for securing your private keys. By using our services, you agree to our terms and conditions and acknowledge that you are responsible for any transactions made through our platform.</p>
+        <p className='max-w-lg mb-3 mt-3 footer-info-text'>
+          The information provided on this website is for informational purposes only and should not be considered as financial or investment advice. Cryptocurrency transactions carry inherent risks, including the potential loss of funds. While we employ advanced security measures, such as our SafeSend feature, to protect your assets, we cannot guarantee the absolute security of your funds. Always ensure that you are using the correct wallet addresses and follow best practices for securing your private keys. By using our services, you agree to our terms and conditions and acknowledge that you are responsible for any transactions made through our platform.
+        </p>
       </div>
 
       {/* Right Side: Footer Links */}
-      <div className="md:w-1/2 flex flex-col md:flex-row justify-between gap-x-2">
+      <div className="md:w-1/2 flex flex-col md:flex-row justify-between gap-x-2 footer-right-section">
         <ul className="flex flex-col justify-between mb-4 md:mb-0 space-y-5 text-stone-300">
           <li className="mb-2 font-bold text-white">TRUSTVAULT</li>
           <li className="mb-2">Home</li>
@@ -849,32 +871,34 @@ const Home = () => {
           <li className="mb-2">Terms of Service</li>
         </ul>
 
-        <ul className="flex-1 flex flex-col justify-between mb-4 md:mb-0 space-y-5 text-stone-300 mr-4">
-          <li className="mb-2 font-bold text-white">DISCOVER</li>
-          <li className="mb-2">Learn & Explore</li>
-          <div className="flex items-center ml-3 mb-2">
-            <span className="mr-2">&#8226;</span>
-            <p>Getting Started Guide</p>
-          </div>
-          <div className="flex items-center ml-3 mb-2">
-            <span className="mr-2">&#8226;</span>
-            <p>Blockchain & Crypto 101</p>
-          </div>
-          <li className="mb-2">Blockchain & Crypto 101</li>
-          <div className="flex items-center ml-3 mb-2">
-            <span className="mr-2">&#8226;</span>
-            <p>FAQ</p>
-          </div>
-          <div className="flex items-center ml-3 mb-2">
-            <span className="mr-2">&#8226;</span>
-            <p>Knowledge Base</p>
-          </div>
-          <li className="mb-2">Stay Connected</li>
-          <div className="flex items-center ml-3 mb-2">
-            <span className="mr-2">&#8226;</span>
-            <p>Tutorials</p>
-          </div>
-        </ul>
+        <ul className="flex-1 flex flex-col justify-between mb-4 md:mb-0 space-y-5 text-stone-300 mr-4 lg:ml-[30px]">
+  <li className="mb-2 font-bold text-white">DISCOVER</li>
+  <li className="mb-2">Learn & Explore</li>
+  <div className="flex items-center mb-2">
+    <span className="mr-2">&#8226;</span>
+    <p>Getting Started Guide</p>
+  </div>
+  <div className="flex items-center mb-2">
+    <span className="mr-2">&#8226;</span>
+    <p>Blockchain & Crypto 101</p>
+  </div>
+  <li className="mb-2">Blockchain & Crypto 101</li>
+  <div className="flex items-center mb-2">
+    <span className="mr-2">&#8226;</span>
+    <p>FAQ</p>
+  </div>
+  <div className="flex items-center mb-2">
+    <span className="mr-2">&#8226;</span>
+    <p>Knowledge Base</p>
+  </div>
+  <li className="mb-2">Stay Connected</li>
+  <div className="flex items-center mb-2">
+    <span className="mr-2">&#8226;</span>
+    <p>Tutorials</p>
+  </div>
+</ul>
+
+
 
         <ul className="md:w-1/4 flex flex-col justify-between mb-4 md:mb-0 space-y-5 text-stone-300">
           <li className="mb-2 font-bold text-white">FOLLOW US</li>
@@ -907,6 +931,7 @@ const Home = () => {
     </footer>
   </div>
 </section>
+
 
 
 
