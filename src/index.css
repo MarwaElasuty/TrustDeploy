@@ -69,8 +69,8 @@ code {
   background: transparent;      /* Set background to transparent */
 }
 
-.white-text-shadow{
-  background: linear-gradient(to top, #FFFFFF, #535353 150%); 
--webkit-text-fill-color: transparent; 
--webkit-background-clip: text;
+.white-text-shadow {
+  background: linear-gradient(to top, #535353 0%, #FFFFFF 50%); 
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }

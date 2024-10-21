@@ -8,13 +8,16 @@ module.exports = {
       backgroundImage: {
         'next-level': "url('./images/next-level-bg.png')",
         'middle-feature': "url('./images/middle-feature.png')",
+        'custom-talk': "url('./images/customTalk.png')",
+        'benefits-bg': "url('./images/benefits-bg.png')",
+        'download-app-bg': "url('./images/download-app-bg.png')",
         'crypto-bg': "url('./images/crypto-bg.svg')",
         'why-choose-line': "url('./images/why-choose-line.svg')",
         'main-bg': "url('./images/main-bg.svg')",
-        "benefit-shadow": "url('./images/benefit-shadow.svg')",
-        "full-screen-shadow": "url('./images/full-screen-shadow.svg')",
-        "safseed-shadow": "url('./images/safseed-shadow.svg')",
-        "zig-bg": "url('./images/zig-bg.svg')",
+        'benefit-shadow': "url('./images/benefit-shadow.svg')",
+        'full-screen-shadow': "url('./images/full-screen-shadow.svg')",
+        'safseed-shadow': "url('./images/safseed-shadow.svg')",
+        'zig-bg': "url('./images/zig-bg.svg')",
       },
       borderRadius: {
         'custom': '50px', // Custom value
@@ -38,4 +41,3 @@ module.exports = {
   },
   plugins: [],
 };
-

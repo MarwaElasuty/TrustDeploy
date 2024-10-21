@@ -21,12 +21,12 @@ import whatsapp from './images/whatsapp.svg';
 import telegram from './images/telegram.svg';
 import linkedin from './images/linkedin.svg';
 import email from './images/email.svg';
-import IOS from './images/IOS.svg';
-import android from './images/android.svg';
-import mac from './images/mac.svg';
-import chrome from './images/chrome.svg';
-import brave from './images/brave.svg';
-import edge from './images/edge.svg';
+import edge from './images/edge.png';
+import mac from './images/mac.png';
+import chrome from './images/chrome.png';
+import brave from './images/brave.png';
+import ios from './images/ios.png';
+import android from './images/android.png';
 import trustLogo from './images/trustvault.svg';
 import footerTel from './images/footerTel.svg'
 import footerTwitter from './images/footerTwitter.svg'
@@ -532,40 +532,28 @@ const SafeSend = () => {
                 {/* Right Side: Small Cards */}
                 <div className="md:w-2/3 flex flex-wrap justify-end sm:justify-center gap-4">
                     {/* Card 1 */}
-                    <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4">
-                        <div className='rounded-in-up absolute top-2'></div>
-                        <img src={IOS} alt="Logo" className="mb-2 z-10 w-12" />
-                    </div>
+                    <img src={ios}></img>
+
 
                     {/* Card 2 */}
-                    <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4">
-                        <div className='rounded-in-down absolute top-2'></div>
-                        <img src={android} alt="Logo" className="mb-2 z-10 w-12" />
-                    </div>
+                    <img src={android}></img>
+
 
                     {/* Card 3 */}
-                    <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4">
-                        <div className='rounded-in-up absolute top-2'></div>
-                        <img src={mac} alt="Logo" className="mb-2 z-10 w-12" />
-                    </div>
+                    <img src={mac}></img>
+
 
                     {/* Card 4 */}
-                    <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4">
-                        <div className='rounded-in-down absolute top-2'></div>
-                        <img src={chrome} alt="Logo" className="mb-2 z-10 w-12" />
-                    </div>
+                    <img src={chrome}></img>
+
 
                     {/* Card 5 */}
-                    <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4">
-                        <div className='rounded-in-up absolute top-2'></div>
-                        <img src={brave} alt="Logo" className="mb-2 z-10 w-12" />
-                    </div>
+                    <img src={brave}></img>
+
 
                     {/* Card 6 */}
-                    <div className="relative bg-gradient-to-t from-neutral-950 to-zinc-900 rounded-lg shadow p-4 w-24 flex flex-col items-center mb-4">
-                        <div className='rounded-in-down absolute top-2'></div>
-                        <img src={edge} alt="Logo" className="mb-2 z-10 w-12" />
-                    </div>
+                    <img src={edge}></img>
+
                 </div>
             </div>
 
