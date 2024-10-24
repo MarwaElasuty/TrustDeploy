@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TrustDeploy/static/css/main.62aa6d0e.css",
-    "main.js": "/TrustDeploy/static/js/main.e40380c1.js",
+    "main.css": "/TrustDeploy/static/css/main.d1ac5098.css",
+    "main.js": "/TrustDeploy/static/js/main.28a354bd.js",
     "static/js/453.0ab489a9.chunk.js": "/TrustDeploy/static/js/453.0ab489a9.chunk.js",
     "static/media/download-app.svg": "/TrustDeploy/static/media/download-app.4b01f6dbf388d6aea5b935129e90d1f4.svg",
     "static/media/intro.svg": "/TrustDeploy/static/media/intro.d50c1dd6258de51a222a2d77822295fb.svg",
@@ -73,12 +73,12 @@
     "static/media/benefit-shadow.svg": "/TrustDeploy/static/media/benefit-shadow.ab3a0874c4ff6697f8a22681e8a48837.svg",
     "static/media/download-app-shadow.svg": "/TrustDeploy/static/media/download-app-shadow.775fca59be89a5bb1736fdc37e32f452.svg",
     "static/media/footerTwitter.svg": "/TrustDeploy/static/media/footerTwitter.2835b06668cbbfdf46601819be16efa1.svg",
-    "main.62aa6d0e.css.map": "/TrustDeploy/static/css/main.62aa6d0e.css.map",
-    "main.e40380c1.js.map": "/TrustDeploy/static/js/main.e40380c1.js.map",
+    "main.d1ac5098.css.map": "/TrustDeploy/static/css/main.d1ac5098.css.map",
+    "main.28a354bd.js.map": "/TrustDeploy/static/js/main.28a354bd.js.map",
     "453.0ab489a9.chunk.js.map": "/TrustDeploy/static/js/453.0ab489a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62aa6d0e.css",
-    "static/js/main.e40380c1.js"
+    "static/css/main.d1ac5098.css",
+    "static/js/main.28a354bd.js"
   ]
 }
