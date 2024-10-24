@@ -73,4 +73,34 @@ code {
   background: linear-gradient(to top, #535353 0%, #FFFFFF 50%); 
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+
+
+#main-download {
+  background-image: none; 
+}
+
+@media (min-width: 1200px) {
+  #main-download {
+    background-image: url('./images/download-app-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #app-store-div{
+    width: 45%;
+  }
+  #google-play-div{
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1396px) {
+  #main-download {
+    background-image: none;
+  }
 }
