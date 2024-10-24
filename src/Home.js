@@ -425,7 +425,7 @@ const Home = () => {
   <section className="w-full px-4 text-gray-800">
     <div className="max-w-5xl mx-auto py-12 px-4 gap-8 text-white rounded-custom bg-gradient-to-t from-zinc-900 to-neutral-900">
       <div className="md:col-span-2 max-w-3xl mx-auto">
-        <h2 className="text-4xl font-semibold">Why Choose Our Multisig Wallet?</h2>
+        <h2 id='why-choose-heading' className="text-4xl font-semibold">Why Choose Our Multisig Wallet?</h2>
         <h3 className="font-light text-stone-300 text-lg">
           Unmatched Security and Total Control for Your Digital Assets
         </h3>
@@ -705,7 +705,7 @@ const Home = () => {
     }
   `}</style>
 
-  <div className="w-full px-4 text-center">
+  <div className="w-full px-4">
     <div className="max-w-6xl mx-auto">
       {/* First Section */}
       <div className="flex flex-col md:flex-row items-start justify-between">
@@ -720,12 +720,12 @@ const Home = () => {
         {/* Right Side: Small Cards */}
         <div className="md:w-2/3 flex flex-wrap justify-center md:justify-end gap-4">
           {/* Cards */}
-          <img src={ios} alt="iOS" className="w-[16%] md:w-[10%] max-w-[80px] mb-4" />
-          <img src={android} alt="Android" className="w-[16%] md:w-[10%] max-w-[80px] mb-4" />
-          <img src={mac} alt="Mac" className="w-[16%] md:w-[10%] max-w-[80px] mb-4" />
-          <img src={chrome} alt="Chrome" className="w-[16%] md:w-[10%] max-w-[80px] mb-4" />
-          <img src={brave} alt="Brave" className="w-[16%] md:w-[10%] max-w-[80px] mb-4" />
-          <img src={edge} alt="Edge" className="w-[16%] md:w-[10%] max-w-[80px] mb-4" />
+          <img src={ios} alt="iOS" className="w-[24%] md:w-[10%] max-w-[80px] mb-4" />
+          <img src={android} alt="Android" className="w-[24%] md:w-[10%] max-w-[80px] mb-4" />
+          <img src={mac} alt="Mac" className="w-[24%] md:w-[10%] max-w-[80px] mb-4" />
+          <img src={chrome} alt="Chrome" className="w-[24%] md:w-[10%] max-w-[80px] mb-4" />
+          <img src={brave} alt="Brave" className="w-[24%] md:w-[10%] max-w-[80px] mb-4" />
+          <img src={edge} alt="Edge" className="w-[24%] md:w-[10%] max-w-[80px] mb-4" />
         </div>
       </div>
     </div>

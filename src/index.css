@@ -97,10 +97,18 @@ code {
   #google-play-div{
     width: 45%;
   }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1396px) {
   #main-download {
     background-image: none;
   }
+}
+
+
+@media (max-width: 768px) {
+#why-choose-heading{
+  font-size: 30px;
+}
 }
