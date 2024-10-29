@@ -80,7 +80,7 @@ code {
 
 
 
-#main-download {
+/* #main-download {
   background-image: none; 
 }
 
@@ -104,11 +104,38 @@ code {
   #main-download {
     background-image: none;
   }
-}
+} */
 
 
 @media (max-width: 768px) {
 #why-choose-heading{
   font-size: 30px;
 }
+}
+
+/* Default background position */
+.bg-main-custom {
+  background-position: 40% 37%;
+}
+
+/* Background and image adjustments for smaller screens */
+@media (max-width: 640px) {
+  .bg-main-custom {
+    background-position: 1% 12%;
+  }
+  
+  .responsive-image {
+    width: 80%; /* Sets width to 80% on smaller screens */
+  }
+}
+
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .bg-main-custom {
+    background-position: 1% 12%;
+  }
+  
+  .responsive-image {
+    width: 80%; /* Sets width to 80% on smaller screens */
+  }
 }
