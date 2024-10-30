@@ -875,7 +875,7 @@ const Home = () => {
   `}</style>
 
   <div className="w-full px-4">
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto mb-12">
       {/* First Section */}
       <div className="flex flex-col md:flex-row items-start justify-between">
         {/* Left Side: Heading and Paragraph */}
@@ -985,18 +985,7 @@ const Home = () => {
     </footer>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
       </div>
-  
-  
     );
   }
 

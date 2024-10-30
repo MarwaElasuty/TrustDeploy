@@ -58,7 +58,7 @@ code {
 
 
 .rounded-in-up {
-  width: 93px;                  /* Width of the div */
+  width: 93px;                 
   height: 84px;                 /* Height of the div */
   border-width: 2px;            /* Set a reasonable border width */
   border-style: solid;          /* Ensure the border is solid */
@@ -122,6 +122,9 @@ code {
   .centered-text{
     text-align: center;
   }
+  .small-wrap{
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -133,6 +136,7 @@ code {
   .centered-text{
     text-align: center;
   }
+
 }
 
 
