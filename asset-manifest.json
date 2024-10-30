@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TrustDeploy/static/css/main.49294678.css",
-    "main.js": "/TrustDeploy/static/js/main.617bbd22.js",
+    "main.js": "/TrustDeploy/static/js/main.1713dc37.js",
     "static/js/453.0ab489a9.chunk.js": "/TrustDeploy/static/js/453.0ab489a9.chunk.js",
     "static/media/download-app.svg": "/TrustDeploy/static/media/download-app.4b01f6dbf388d6aea5b935129e90d1f4.svg",
     "static/media/intro.svg": "/TrustDeploy/static/media/intro.d50c1dd6258de51a222a2d77822295fb.svg",
@@ -71,11 +71,11 @@
     "static/media/download-app-shadow.svg": "/TrustDeploy/static/media/download-app-shadow.775fca59be89a5bb1736fdc37e32f452.svg",
     "static/media/footerTwitter.svg": "/TrustDeploy/static/media/footerTwitter.2835b06668cbbfdf46601819be16efa1.svg",
     "main.49294678.css.map": "/TrustDeploy/static/css/main.49294678.css.map",
-    "main.617bbd22.js.map": "/TrustDeploy/static/js/main.617bbd22.js.map",
+    "main.1713dc37.js.map": "/TrustDeploy/static/js/main.1713dc37.js.map",
     "453.0ab489a9.chunk.js.map": "/TrustDeploy/static/js/453.0ab489a9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49294678.css",
-    "static/js/main.617bbd22.js"
+    "static/js/main.1713dc37.js"
   ]
 }
