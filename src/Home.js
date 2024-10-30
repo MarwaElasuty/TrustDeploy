@@ -189,58 +189,90 @@ const Home = () => {
           </div>
         </section>
   </section>
-  
+
   <section className="text-white mt-8 mb-8 mx-auto w-full">
   <div 
-    id='main-download' 
-    className="mx-auto flex flex-wrap justify-center items-center font-semibold relative w-11/12 md:w-4/5"
+    id="main-download" 
+    className="pt-4 mb-8 mx-auto flex flex-wrap justify-center items-center font-semibold relative w-11/12"
     style={{
-      backgroundImage: `url(${mainDownload})`, // Set the background image
-      backgroundSize: 'cover', // Cover the entire rectangle
-      backgroundPosition: 'center', // Center the image
-      borderRadius: '1rem', // Adding rounded corners
-      padding: '2rem 0'
+      background: 'linear-gradient(180deg, #1a1a1a, #0d0d0d)',
+      borderRadius: '1rem',
+      position: 'relative',
+      zIndex: 1,
     }}
   >
-    {/* Left div with 50% width on smaller screens */}
-    <div className="w-full sm:w-1/2 md:w-1/2 text-center md:text-left">
-      <h2 className="white-text-shadow text-3xl font-bold sm:text-3xl mb-4 sm:mb-6">
+    {/* Shadow Pseudo-Element with New Gradient Background */}
+    <div style={{
+      content: '""',
+      position: 'absolute',
+      inset: '143px 0px 0px',
+      borderRadius: '1rem',
+      zIndex: -1,
+      background: 'linear-gradient(rgba(4, 4, 4, 0) 0%, rgba(4, 9, 4, 0.6) 30%, rgb(4, 4, 4) 100%)',
+      opacity: 0.5,
+    }}></div>
+
+    {/* Main Content */}
+    <div className="w-full sm:w-1/2 md:w-[46%] flex flex-col centered-text">
+      <h2 className="white-text-shadow text-3xl font-bold">
         Download Our App
       </h2>
       
       {/* Flex container for buttons */}
-      <div className="flex items-center mt-6 gap-x-5 flex-wrap gap-y-4 justify-center md:justify-start">
+      <div className="buttons-container w-full flex justify-center items-center mt-4 gap-x-5 gap-y-4 flex-wrap md:flex-nowrap">
         
         {/* Google Play Button */}
-        <div id='google-play-div' className="bg-gradient-to-t from-neutral-950 to-gray-800 flex items-center justify-center gap-4 border-2 border-indigo-500 px-4 sm:px-4 py-2 rounded-3xl w-full">
+        <div 
+          id="google-play-div" 
+          className="bg-gradient-to-t from-neutral-950 to-gray-800 flex items-center justify-center gap-2 border-2 border-indigo-500 px-3 py-1 rounded-3xl lg:w-[47%] md:w-[47%] w-80"
+        >
           <div>
-            <img src={googlePlay} alt="google-play" className="w-6 sm:w-8" />
+            <img src={googlePlay} alt="google-play" className="w-5 sm:w-6" />
           </div>
           <div className="text-left">
-            <p className="text-sm font-medium">GET IT ON</p>
-            <h3 className="text-base sm:text-lg font-semibold">Google Play</h3>
+            <p className="text-xs font-medium">GET IT ON</p>
+            <h3 className="text-sm sm:text-base font-semibold">Google Play</h3>
           </div>
         </div>
 
         {/* App Store Button */}
-        <div id='app-store-div' className="bg-gradient-to-t from-neutral-950 to-gray-800 flex items-center justify-center gap-4 border-2 border-indigo-500 px-4 sm:px-4 py-2 rounded-3xl w-full">
+        <div 
+          id="app-store-div" 
+          className="bg-gradient-to-t from-neutral-950 to-gray-800 flex items-center justify-center gap-2 border-2 border-indigo-500 px-3 py-1 rounded-3xl lg:w-[47%] md:w-[47%] w-80"
+        >
           <div>
-            <img src={apple} alt="apple" className="w-6 sm:w-8" />
+            <img src={apple} alt="apple" className="w-5 sm:w-6" />
           </div>
-          <div className="text-left">
-            <p className="text-sm font-medium">Download on the</p>
-            <h3 className="text-base sm:text-lg font-semibold">App Store</h3>
+          <div className='justify-center'>
+            <p className="text-xs font-medium text-center">Download on the</p>
+            <h3 className="text-sm sm:text-base font-semibold text-center">App Store</h3>
           </div>
         </div>
       </div>
     </div>
 
-    {/* Image Section with 40% width on smaller screens */}
-    <div className="relative top-5 w-full sm:w-2/5 md:w-1/2 lg:w-2/5 text-center md:text-right">
-      <img src={downloadApp} alt="download-app" className="w-3/4 sm:w-full inline-block" />
+    {/* Image Section with responsive settings */}
+    <div className="download-img-container w-full sm:w-2/5 md:w-2/5 lg:w-2/5 text-center md:text-right mt-6">
+      <img 
+        src={downloadApp} 
+        alt="download-app" 
+        className="w-3/4 h-auto max-w-xs mx-auto" 
+        style={{ maxWidth: '100%', height: 'auto' }} 
+      />
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,7 +338,7 @@ const Home = () => {
         </section>
   
   
-        <section className="w-full py-16 px-4 bg-full-screen-shadow bg-no-repeat text-center" style={{ backgroundPosition: '150% 50%', backgroundSize: '60%' }}>
+        <section className="w-full mt-8 px-4 bg-full-screen-shadow bg-no-repeat text-center" style={{ backgroundPosition: '150% 50%', backgroundSize: '60%' }}>
   <style jsx>{`
     @media (max-width: 768px) {
       .bg-benefits-bg {
@@ -329,7 +361,7 @@ const Home = () => {
   <h1 className='text-5xl white-text-shadow mb-10 text-center font-extrabold'>Benefits</h1>
     </div>
   <div className="max-w-6xl mx-auto">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 py-12 text-white justify-items-center bg-benefits-bg bg-cover bg-no-repeat">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 py-4 text-white justify-items-center bg-benefits-bg bg-cover bg-no-repeat">
       
       {/* Left Card */}
       <div className="flex flex-col items-center text-center min-h-64 h-full px-4">
@@ -418,7 +450,7 @@ const Home = () => {
 
 
 
-<section className="w-full py-16 px-4 text-gray-800 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '150% 140%', backgroundSize: '60%' }}>
+<section className="w-full mt-4 px-4 text-gray-800 bg-full-screen-shadow bg-no-repeat" style={{ backgroundPosition: '150% 140%', backgroundSize: '60%' }}>
   {/* Future of Crypto Management */}
   <section className="w-full py-2 mt-6">
     <div className="max-w-6xl mx-auto text-white text-center">

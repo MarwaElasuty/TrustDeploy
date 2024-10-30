@@ -79,34 +79,6 @@ code {
 }
 
 
-
-/* #main-download {
-  background-image: none; 
-}
-
-@media (min-width: 1200px) {
-  #main-download {
-    background-image: url('./images/download-app-bg.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #app-store-div{
-    width: 45%;
-  }
-  #google-play-div{
-    width: 45%;
-  }
-
-}
-
-@media (min-width: 1024px) and (max-width: 1396px) {
-  #main-download {
-    background-image: none;
-  }
-} */
-
-
 @media (max-width: 768px) {
 #why-choose-heading{
   font-size: 30px;
@@ -139,3 +111,38 @@ code {
     width: 80%; /* Sets width to 80% on smaller screens */
   }
 }
+
+
+
+/* Extra Small Devices */
+@media (max-width: 640px) {
+  .w-80{
+    width: 80%;
+  }
+  .centered-text{
+    text-align: center;
+  }
+}
+
+
+/* Medium Devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .w-80{
+    width: 80%;
+  }
+  .centered-text{
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .download-img-container{
+    margin-top: -3%;
+  }
+}
+
+
+
+
+
