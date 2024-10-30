@@ -168,7 +168,7 @@ const SafeSend = () => {
             </div>
 
             <section className="w-full mt-16 mb-16 ">
-  <div className="max-w-7xl flex flex-nowrap  small-wrap justify-between mx-auto px-1 gap-8 text-white">
+  <div className="max-w-7xl flex flex-nowrap small-wrap justify-between mx-auto px-1 gap-8 text-white">
     <div className="container w-full md:w-1/2">
       <div className="w-full flex items-center justify-evenly">
         <img src={redExit} alt="Exit Icon" />
