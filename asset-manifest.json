@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TrustDeploy/static/css/main.5564e255.css",
-    "main.js": "/TrustDeploy/static/js/main.43acdf60.js",
+    "main.css": "/TrustDeploy/static/css/main.93a83e02.css",
+    "main.js": "/TrustDeploy/static/js/main.9c603e2a.js",
     "static/js/453.0ab489a9.chunk.js": "/TrustDeploy/static/js/453.0ab489a9.chunk.js",
     "static/media/download-app.svg": "/TrustDeploy/static/media/download-app.4b01f6dbf388d6aea5b935129e90d1f4.svg",
     "static/media/intro.svg": "/TrustDeploy/static/media/intro.d50c1dd6258de51a222a2d77822295fb.svg",
@@ -14,12 +14,12 @@
     "static/media/new-download.png": "/TrustDeploy/static/media/new-download.8de9c59d561f72cf0792.png",
     "static/media/benefit3.svg": "/TrustDeploy/static/media/benefit3.b6e6b96a8165c880f5fbd299fb787f21.svg",
     "static/media/next-level-bg.png": "/TrustDeploy/static/media/next-level-bg.48701f1c6164d1864f5b.png",
+    "static/media/new-download-app.png": "/TrustDeploy/static/media/new-download-app.ebb922244ce4e4dda967.png",
     "static/media/zig-bg.svg": "/TrustDeploy/static/media/zig-bg.09b0ed864fb9b7851ef5ce7e482406ea.svg",
     "static/media/benefit2.svg": "/TrustDeploy/static/media/benefit2.ea17ac7663a27023e4200fcceef9c257.svg",
     "static/media/blockchain1.svg": "/TrustDeploy/static/media/blockchain1.9dd4e07b2cca4d588cdac663fdef3d2d.svg",
     "static/media/benefits-bg.png": "/TrustDeploy/static/media/benefits-bg.d4740073364344bbf421.png",
     "static/media/customTalk.png": "/TrustDeploy/static/media/customTalk.4359871c9fee303f5432.png",
-    "static/media/new-download-app.png": "/TrustDeploy/static/media/new-download-app.c1825f8e942b1f6b1be6.png",
     "static/media/crypto3.svg": "/TrustDeploy/static/media/crypto3.7a4b9e38205e1111c3c70d07b1586535.svg",
     "static/media/crypto4.svg": "/TrustDeploy/static/media/crypto4.d4a0124461de144449216a05a4a19712.svg",
     "static/media/crypto2.svg": "/TrustDeploy/static/media/crypto2.6b6b1efbaa018166989a112af8b11a9d.svg",
@@ -73,12 +73,12 @@
     "static/media/benefit-shadow.svg": "/TrustDeploy/static/media/benefit-shadow.ab3a0874c4ff6697f8a22681e8a48837.svg",
     "static/media/download-app-shadow.svg": "/TrustDeploy/static/media/download-app-shadow.775fca59be89a5bb1736fdc37e32f452.svg",
     "static/media/footerTwitter.svg": "/TrustDeploy/static/media/footerTwitter.2835b06668cbbfdf46601819be16efa1.svg",
-    "main.5564e255.css.map": "/TrustDeploy/static/css/main.5564e255.css.map",
-    "main.43acdf60.js.map": "/TrustDeploy/static/js/main.43acdf60.js.map",
+    "main.93a83e02.css.map": "/TrustDeploy/static/css/main.93a83e02.css.map",
+    "main.9c603e2a.js.map": "/TrustDeploy/static/js/main.9c603e2a.js.map",
     "453.0ab489a9.chunk.js.map": "/TrustDeploy/static/js/453.0ab489a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5564e255.css",
-    "static/js/main.43acdf60.js"
+    "static/css/main.93a83e02.css",
+    "static/js/main.9c603e2a.js"
   ]
 }
