@@ -303,7 +303,7 @@ const Home = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Supported cryptocurrencies</h3>
                   <p className="text-base mb-6">
-                    Description of the main feature that is larger and more detailed.
+                  TOP - 30 Coin Market Cap
                   </p>
                 </div>
                 <img src={blockchain1} alt="Main Feature" className='w-64 mx-auto' />
@@ -313,7 +313,8 @@ const Home = () => {
               <div className="bg-gradient-to-t from-neutral-950 to-zinc-800 rounded-xl px-4 py-6 flex flex-col justify-between text-white md:col-span-2"> {/* Spans 2 columns */}
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Supported token standards</h3>
-                  <p className="text-base mb-6">Brief description of feature 1.</p>
+                  <p className="text-base mb-6">BNB, ERC-20, TRC-10,
+                  TRC-20, SPL, ALGO, EOS</p>
                 </div>
                 <img src={blockchain2} alt="Feature 1" className='1/3 mx-auto' />
               </div>
@@ -321,7 +322,8 @@ const Home = () => {
               <div className="bg-gradient-to-t from-neutral-950 to-zinc-800 rounded-xl px-4 py-6 flex flex-col justify-between text-white md:col-span-2"> {/* Spans 2 columns */}
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Supported NFTs</h3>
-                  <p className="text-base mb-6">Brief description of feature 2.</p>
+                  <p className="text-base mb-6">ERC-721
+                  ERC-1155</p>
                 </div>
                 <img src={blockchain3} alt="Feature 2" className='1/3 mx-auto' />
               </div>
@@ -329,7 +331,8 @@ const Home = () => {
               <div className="bg-gradient-to-t from-neutral-950 to-zinc-800 rounded-xl px-4 py-6 flex flex-col justify-between text-white md:col-span-2"> {/* Spans 2 columns */}
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Staking Coming Soon</h3>
-                  <p className="text-base mb-6">Brief description of feature 3.</p>
+                  <p className="text-base mb-6">TRX, SOL, AVAX, BNB,
+                  KSM, DOT</p>
                 </div>
                 <img src={blockchain4} alt="Feature 3" className='1/3 mx-auto' />
               </div>
